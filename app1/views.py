@@ -40,7 +40,7 @@ def index(request):
         'product_count': product_count,
     }
     return render(request, 'index.html', context)
-
+# login function 
 @login_required
 def staff(request):
     workers = User.objects.all()
